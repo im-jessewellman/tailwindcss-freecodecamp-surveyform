@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>tailwind project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body class="bg-gray-300">
+        <div class="container text-center justify-center">
+        <h1 id="title">Survey</h1>
+  <p id="description">Description of survey.</p>
+ 
+  <form id="survey-form" class="bg-yellow-400 flex flex-col ">
+    
+    <label for="name" id="name-label"> Name:</label> <input class="m-auto p-2 " type="text" placeholder="Enter your name" id="name" required>
+    <label for="email" id="email-label"> Email: </label><input class="m-auto p-2 " type="email" placeholder="Enter your email" id="email" required> 
+    
+    <label for="number" id="number-label"> Number between 18-100: </label><input class="m-auto p-2 "  type="number" id="number" min="18" max="100" placeholder="100">
+    
+    
+    
+    <label for="dropdown">Select your option: </label>
+    <select id="dropdown" class="m-auto p-2 custom-select">
+      <option value="">--Please choose an option--</option>
+      <option value="opt1">option 1</option>
+      <option value="opt2">option 2</option>
+      <option value="opt3">option 3</option>
+    </select>
+      
+     <label class="form-check-label">Select radio button:</label>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="radio" value="option1">
+      <label class="form-check-label">
+    option 1
+      </label>
+      </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="radio" value="option2">
+    <label class="form-check-label">
+    option 2
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="option3">
+    <label class="form-check-label">
+    option 3
+      </label>
+      </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="option4">
+      <label class="form-check-label">
+    option 4
+      </label>
+     </div>
+    
+    <label class="form-check-label">Select checkbox:</label>
+    <div class="form-check">
+    <input type="checkbox" value="optiona" class="form-check-input"><label class="form-check-label">Option A</label>
+      
+    </div>
+     <div class="form-check"> 
+    <input type="checkbox" value="optionb" class="form-check-input"><label class="form-check-label">Option B</label>
+       
+    </div>
+      <div class="form-check">
+    <input type="checkbox" value="optionc" class="form-check-input"><label class="form-check-label">Option C</label>
+        
+    </div>
+    <div class="m-5 p-3 form-check">
+    <textarea placeholder="Additonal Comments..." class="form-control"></textarea>
+      
+    </div>
+     <div class=" form-check"> 
+    <button id="submit" class="bg-gray-500 form-control">Submit</button>
+   </div>
+  </form>
+
+</div>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+       
+    </body>
+</html>
